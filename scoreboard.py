@@ -25,7 +25,7 @@ class Scoreboard(Turtle):
     def reset(self):
         if self.score > self.high_score:
             self.high_score = self.score
-            with open("C:/Users/jay-5/Documents/code/pythonProj/100daysOfPy/snakeGame/data.txt", mode = "w") as data:
+            with open("data.txt", mode = "w") as data:
                 data.write(f"{self.high_score}")
         self.score = 0
         self.update_scoreboard() 
